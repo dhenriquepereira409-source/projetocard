@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(1, 12, 107);
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
+        .card{
+            background: rgb(29, 157, 196);
+            padding: 15px;
+            border-radius: 12px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgb(0, 0, 0);
+        }
+        .imgperfil{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid rgb(0, 0, 0);
+            margin-bottom: 1px;
+            object-fit: fill;
+        }
+        h2{
+            margin: 10px 0 5px;
+            font-size: 30px;
+        }
+        .local{
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .job{
+            line-height: 1.5;
+        }
+        .botoes{
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn{
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: 1px solid rgb(0, 102, 219);
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            opacity: 0.8;
+            background: rgb(159, 220, 255);
+        }
+        .skills{
+            margin-top: 15px;
+            text-align: left;
+        }
+        .skills h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag{
+            border: 1px solid aliceblue;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .social-media{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+        }
+        .social-media i{
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .social-media i:hover{
+            color: blueviolet;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="caricatura.png" alt="Foto de Perfil" class="imgperfil">
+        <h2>Douglas Henrique</h2>
+        <div class="local">Montes Claros - MG</div>
+        <div class="job">Técnico em Informática<br>Aluno do Senac</div><br>
+
+        <div class="botoes">
+            <button class="btn primario">Mensagem</button>
+            <button class="btn secundario">Follow</button>
+        </div>
+        <div class="skills">
+            <h3>Habilidades</h3>
+            <div class="tags"> 
+                
+                <span class="tag">Sofware</span>
+                <span class="tag">Hadware</span>
+                <span class="tag">Redes</span>
+                <span class="tag">Banco de dados</span>
+                <span class="tag">Html</span>
+                <span class="tag">Python</span>
+                <span class="tag">Linux</span>
+            </div>
+        </div>
+        <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+</body>
+</html>
