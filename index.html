@@ -8,28 +8,37 @@
     
     <style>
         body{
+            background-image: url(fundo.jpg);
+            background-size: 350% 250%;
             margin: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: rgb(1, 12, 107);
             font-family: Arial, Helvetica, sans-serif;
             color: aliceblue;
         }
         .card{
-            background: rgb(29, 157, 196);
+            background: linear-gradient(-45deg,rgb(78, 8, 189), rgb(190, 190, 190), rgb(9, 27, 185));
+            background-size: 400% 100%;
+            animation: gradientBG 10s ease infinite;
+            margin: 0;
             padding: 15px;
             border-radius: 12px;
             width: 300px;
             text-align: center;
-            box-shadow: 0 10px 25px rgb(0, 0, 0);
+            box-shadow: 0 10px 25px rgb(76, 219, 255);
+        }
+        @keyframes gradientBG{
+            0%{background-position: 0% 50%;}
+            50%{background-position: 100% 50%;}
+            100%{background-position: 0% 50%;}
         }
         .imgperfil{
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
-            border: 4px solid rgb(0, 0, 0);
+            border: 4px solid rgb(68, 68, 68);
             margin-bottom: 1px;
             object-fit: fill;
         }
@@ -37,13 +46,14 @@
             margin: 10px 0 5px;
             font-size: 30px;
         }
-        .local{
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
         .job{
             line-height: 1.5;
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .local{
+            font-size: 16px;
         }
         .botoes{
             margin: 20px 0;
@@ -52,16 +62,21 @@
             gap: 10px;
         }
         .btn{
+            color: black;
+            background-color: aliceblue;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
             padding: 10px 18px;
             border-radius: 6px;
-            border: 1px solid rgb(0, 102, 219);
+            border: 1px solid rgb(0, 108, 231);
             cursor: pointer;
             font-size: 16px;
             transition: 0.3s;
         }
         .btn:hover{
             opacity: 0.8;
-            background: rgb(159, 220, 255);
+            background: rgb(161, 203, 219);
         }
         .skills{
             margin-top: 15px;
@@ -96,18 +111,26 @@
             color: blueviolet;
             transform: scale(1.2);
         }
+        .social-media a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .social-media a:hover{
+            color: blueviolet;
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="caricatura.png" alt="Foto de Perfil" class="imgperfil">
+        <img src="imageprofile.jpg" alt="Foto de Perfil" class="imgperfil">
         <h2>Douglas Henrique</h2>
-        <div class="local">Montes Claros - MG</div>
-        <div class="job">Técnico em Informática<br>Aluno do Senac</div><br>
+        <div class="job">Técnico em Informática</div>
+        <div class="local">Montes Claros - MG - Senac</div><br>
 
         <div class="botoes">
-            <button class="btn primario">Mensagem</button>
-            <button class="btn secundario">Follow</button>
+            <a href="https://wa.me/5538984022480?text=Olá,%20vim%20pelo%20card."target="_blank" class="btn primario">Mensagem</button></a>
+            <a href="https://github.com/dhenriquepereira409-source"target="_blank" class="btn secundario">Follow</a>
         </div>
         <div class="skills">
             <h3>Habilidades</h3>
@@ -123,10 +146,9 @@
             </div>
         </div>
         <div class="social-media">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="https://github.com/dhenriquepereira409-source" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/douglas-henrique-309a54383/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/douglas_boundless" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 </body>
